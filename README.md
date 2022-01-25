@@ -16,6 +16,15 @@ mit6.824 这门课程可以说是明星课程了，主讲老师是Robert Morris�
 
 【2】[https://pdos.csail.mit.edu/6.824/schedule.html](https://pdos.csail.mit.edu/6.824/schedule.html)
 
+## 如果
 
+* 你发现了翻译的错误，或者想把剩下几门课程的翻译补上，可以向关联的[github](https://github.com/huihongxiao/MIT6.824)提交PR
+* 你觉得我做的还不错，可以关注我的[知乎](https://www.zhihu.com/people/xiao-hong-hui-15)，并给我一个点赞。
+* 你正在找一份工作，并且想与和我一样的工程师共事，请联系我：chris.xiao@shopee.com
+* 还想学习其他MIT课程，我还做了一些其他的翻译：
+  * [MIT6.s081 - 操作系统](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
+  * [MIT6.829 - 计算机网络 ](https://mit-public-courses-cn-translatio.gitbook.io/mit6.829/)（work in progress）
 
-_声明：此次翻译纯属个人爱好，如果涉及到任何版权行为，请联系我，我将删除内容。文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权利，也就是说你看到的内容也不一定代表本人最新的认知和观点。_
+## _声明_
+
+_此次翻译纯属个人爱好，如果涉及到任何版权行为，请联系我，我将删除内容。文中所有内容，与本人现在，之前或者将来的雇佣公司无关，本人保留自省的权利，也就是说你看到的内容也不一定代表本人最新的认知和观点。_
