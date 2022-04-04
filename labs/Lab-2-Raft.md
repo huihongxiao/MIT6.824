@@ -28,3 +28,47 @@ Test (2A): election after network failure ...
 ...
 $
 ```
+
+Part 2B
+实现 leader 和 follower 的代码，使得可以添加新的条目，然后就可以通过 `go test -run 2B` 的测试。
+
+* **提示**：你的第一个目标是通过 `TestBasicAgree2B()`，先从实现 `Start()` 开始，之后按照图2的要求完成通过 AppendEntries RPCs 收发新的日志条目的代码。
+
+* **提示**：你需要实现选举的限制（论文中的章节5.4.1）。
+
+* **提示**：一种可能会导致测试失败的方式是在 leader 还存活时就发起了新的选举。如果出现了这种情况，认真看一下管理选举计时器（timer）的代码，或者是不是获得选取成功后没有立刻发送心跳。
+
+* **提示**：你的代码或许包含有循环检查某个特定事件是否发生的代码段，不要一直执行这些代码，这样会占用大量的时间以至于最终无法通过测试。用Go 语言的条件变量（sync.Cond），或者在循环中执行 `time.Sleep(10 * time.Millisecond)`。
+
+* **提示**：为了你自己着想，把代码写得尽可能整洁干净。如果需要更多的帮助和灵感，可以看看我们的[结构](http://nil.csail.mit.edu/6.824/2020/labs/raft-structure.txt)、[锁](http://nil.csail.mit.edu/6.824/2020/labs/raft-locking.txt)和[引导页](https://thesquareplanet.com/blog/students-guide-to-raft/)。
+
+如果你这部分跑的太慢，后面的测试可能会失败。你可以通过输出看一看你的代码耗费的真实时间和 CPU 时间。以以下输出为例：
+
+```
+$ time go test -run 2B
+Test (2B): basic agreement ...
+  ... Passed --   1.6  3   18    5158    3
+Test (2B): RPC byte count ...
+  ... Passed --   3.3  3   50  115122   11
+Test (2B): agreement despite follower disconnection ...
+  ... Passed --   6.3  3   64   17489    7
+Test (2B): no agreement if too many followers disconnect ...
+  ... Passed --   4.9  5  116   27838    3
+Test (2B): concurrent Start()s ...
+  ... Passed --   2.1  3   16    4648    6
+Test (2B): rejoin of partitioned leader ...
+  ... Passed --   8.1  3  111   26996    4
+Test (2B): leader backs up quickly over incorrect follower logs ...
+  ... Passed --  28.6  5 1342  953354  102
+Test (2B): RPC counts aren't too high ...
+  ... Passed --   3.4  3   30    9050   12
+PASS
+ok      raft    58.142s
+
+real    0m58.475s
+user    0m2.477s
+sys     0m1.406s
+$
+```
+"ok raft 58.142s" 代表着 Go 测试这个程序花费的真实时间（wall-clock time）。"user 0m2.477s"指的是代码执行实际花费的 CPU 时间，不包括 waiting 和 sleeping。如果你的代码通过 2B 的测试真实时间花费超过了一分钟，或者 CPU 时间超过了5秒，之后你可能遇到问题。看一看waiting 和 sleeping 在 RPC 调用超时上花费的时间，没有waiting 和 sleeping 或者使用条件变量或channel来阻塞，但一直在执行循环的代码段，以及是否有大量的 RPCs 调用。
+
