@@ -5,7 +5,7 @@
   * [1.1 分布式系统的驱动力和挑战（Drivens and Challenges）](lecture-01-introduction/1.1-fen-bu-shi-xi-tong-de-qu-dong-li-he-tiao-zhan-drivens-and-challenges.md)
   * [1.2 课程结构（Course Structure）](lecture-01-introduction/1.2-ke-cheng-jie-gou-course-structure.md)
   * [1.3 分布式系统的抽象和实现工具（Abstraction and Implementation）](lecture-01-introduction/1.3-fen-bu-shi-xi-tong-de-chou-xiang-he-shi-xian-gong-ju-abstraction-and-implementation.md)
-  * [1.4 可扩展性（Scalability）](lecture-01-introduction/14.-xing-neng-performance.md)
+  * [1.4 可扩展性（Scalability）](lecture-01-introduction/1.4-xing-neng-performance.md)
   * [1.5 可用性（Availability）](lecture-01-introduction/1.5-rong-cuo-fault-tolerance.md)
   * [1.6 一致性（Consistency）](lecture-01-introduction/1.6-yi-zhi-xing-consistency.md)
   * [1.7 MapReduce基本工作方式](lecture-01-introduction/1.7-mapreduce-chu-tan.md)
