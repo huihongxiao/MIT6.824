@@ -22,7 +22,7 @@ mit6.824 这门课程可以说是明星课程了，主讲老师是Robert Morris�
 * 你觉得我做的还不错，可以关注我的[知乎](https://www.zhihu.com/people/xiao-hong-hui-15)，并给我一个点赞。
 * 还想学习其他MIT课程，我还做了一些其他的翻译：
   * [MIT6.s081 - 操作系统](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
-  * [MIT6.829 - 计算机网络 ](https://mit-public-courses-cn-translatio.gitbook.io/mit6.829/)（work in progress）
+  * [MIT6.829 - 计算机网络 ](https://mit-public-courses-cn-translatio.gitbook.io/mit6.829/)（只有前三章，已停更）
 
 ## _声明_
 
