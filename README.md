@@ -20,10 +20,7 @@ mit6.824 这门课程可以说是明星课程了，主讲老师是Robert Morris�
 
 * 你发现了翻译的错误，或者想把剩下几节课程的翻译补上，可以向关联的[github](https://github.com/huihongxiao/MIT6.824)提交PR
 * 你觉得我做的还不错，可以关注我的[知乎](https://www.zhihu.com/people/xiao-hong-hui-15)，并给我一个点赞。
-* 还想学习其他IT相关知识，我还做了一些其他的翻译：
-  * MIT6.s081 - 操作系统：[github](https://github.com/huihongxiao/MIT6.S081)；[gitbook](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
-  * MIT6.829 - 计算机网络 （只有前三章，已停更）：[github](https://github.com/huihongxiao/MIT6.829)；[gitbook](https://mit-public-courses-cn-translatio.gitbook.io/mit6.829/)
-  * TCP拥塞控制：[github](https://github.com/huihongxiao/TCP-Congestion-Control-A-Systems-Approach)；[gitbook](https://mit-public-courses-cn-translatio.gitbook.io/tcp-congestion-control-a-systems-approach/)
+* 还想学习其他IT相关知识，我还做了一些[其他的翻译](https://huihongxiao.github.io/2024/03/06/%E6%88%91%E7%9A%84%E7%BF%BB%E8%AF%91.html)。
 
 ## _声明_
 
